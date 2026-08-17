@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JavaScript Mini Projects</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>JavaScript Mini Projects</h1>
+      <p>Khaled shawky</p>
+    </header>
+
+    <main>
+      <!-- Grade Letter -->
+      <section class="project-card">
+        <h2>Grade Letter</h2>
+        <p>Enter your score to get your grade.</p>
+
+        <input type="number" id="gradeInput" placeholder="Enter your score" />
+
+        <button id="gradeBtn">Check Grade</button>
+
+        <p id="gradeResult"></p>
+      </section>
+
+      <!-- Temperature Converter -->
+      <section class="project-card">
+        <h2>Temperature Converter</h2>
+        <p>Convert temperature between Celsius and Fahrenheit.</p>
+
+        <input
+          type="number"
+          id="temperatureInput"
+          placeholder="Enter temperature"
+        />
+
+        <select id="temperatureUnit">
+          <option value="celsius">Celsius → Fahrenheit</option>
+          <option value="fahrenheit">Fahrenheit → Celsius</option>
+        </select>
+
+        <button id="temperatureBtn">Convert</button>
+
+        <p id="temperatureResult"></p>
+      </section>
+
+      <!-- Password Validator -->
+      <section class="project-card">
+        <h2>Password Validator</h2>
+        <p>Check if your password meets the requirements.</p>
+
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="Enter password"
+        />
+
+        <button id="passwordBtn">Validate Password</button>
+
+        <p id="passwordResult"></p>
+      </section>
+
+      <!-- Simple Calculator -->
+      <section class="project-card calculator-card">
+        <h2>Simple Calculator</h2>
+
+        <div class="calculator">
+          <input type="text" id="calculatorDisplay" readonly />
+
+          <div class="calculator-buttons">
+            <button class="calculator-btn clear" id="clearBtn">C</button>
+            <button class="calculator-btn operator" data-operator="/">÷</button>
+            <button class="calculator-btn operator" data-operator="*">×</button>
+            <button class="calculator-btn operator" data-operator="-">−</button>
+
+            <button class="calculator-btn number" data-number="7">7</button>
+            <button class="calculator-btn number" data-number="8">8</button>
+            <button class="calculator-btn number" data-number="9">9</button>
+            <button class="calculator-btn operator" data-operator="+">+</button>
+
+            <button class="calculator-btn number" data-number="4">4</button>
+            <button class="calculator-btn number" data-number="5">5</button>
+            <button class="calculator-btn number" data-number="6">6</button>
+            <button class="calculator-btn equals" id="equalsBtn">=</button>
+
+            <button class="calculator-btn number" data-number="1">1</button>
+            <button class="calculator-btn number" data-number="2">2</button>
+            <button class="calculator-btn number" data-number="3">3</button>
+
+            <button class="calculator-btn number zero" data-number="0">
+              0
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>JavaScript Practice Projects</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
